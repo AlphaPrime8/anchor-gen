@@ -1,6 +1,6 @@
 [package]
-name = "anchor-generate-cpi-interface"
-version = "0.3.1"
+name = "anchor-generate-cpi-interface-mod"
+version = "0.3.2"
 edition = "2021"
 description = "Generates an Anchor CPI crate from a JSON IDL."
 authors = ["Ian Macalinao <ian@saber.so>"]
@@ -10,16 +10,16 @@ keywords = ["solana", "anchor"]
 readme = "../../README.md"
 
 [lib]
-name = "anchor_generate_cpi_interface"
+name = "anchor_generate_cpi_interface_mod"
 path = "src/lib.rs"
 proc-macro = true
 
 [features]
-compat-program-result = ["anchor-idl/compat-program-result"]
+compat-program-result-mod = ["anchor-idl-mod/compat-program-result"]
 
 [dependencies]
 bytemuck = {version = "1.13.1", features = ["min_const_generics", "derive"]}
-anchor-idl = { version = "0.3.0", path = "../anchor-idl" }
+anchor-idl-mod = { version = "0.3.2", path = "../anchor-idl" }
 darling = "0.14"
 syn = { version = "1", features = ["full"] }
 
