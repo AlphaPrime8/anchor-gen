@@ -12,6 +12,7 @@ keywords = ["solana", "anchor"]
 compat-program-result = []
 
 [dependencies]
+bytemuck = {version = "1.13.1", features = ["min_const_generics", "derive"]}
 anchor-syn = { version = "0.24.2", features = ["idl"] }
 darling = "0.14"
 heck = "0.4.0"

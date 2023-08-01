@@ -18,6 +18,7 @@ proc-macro = true
 compat-program-result = ["anchor-idl/compat-program-result"]
 
 [dependencies]
+bytemuck = {version = "1.13.1", features = ["min_const_generics", "derive"]}
 anchor-idl = { version = "0.3.0", path = "../anchor-idl" }
 darling = "0.14"
 syn = { version = "1", features = ["full"] }
