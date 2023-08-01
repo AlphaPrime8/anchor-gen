@@ -4,7 +4,6 @@ version = "0.3.2"
 edition = "2021"
 description = "Generates Rust code from an Anchor IDL."
 authors = ["Ian Macalinao <ian@saber.so>"]
-repository = "https://github.com/saber-hq/anchor-gen"
 license = "Apache-2.0"
 keywords = ["solana", "anchor"]
 
